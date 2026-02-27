@@ -22,7 +22,7 @@
     "port-authority": "^1.0.5",
     "puppeteer": "^1.9.0",
     "require-nocache": "1.0.0",
-    "rollup": "^0.66.6",
+    "rollup": "^2.80.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-html": "^0.2.1",
     "rollup-plugin-node-resolve": "^4.0.0",
