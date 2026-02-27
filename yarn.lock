@@ -15,11 +15,6 @@
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-0.5.0.tgz#b21510597fd601e5d7c95008b76bf0d254ebfd31"
   integrity sha512-oZLYFEAzUKyi3SKnXvj32ZCEGH6RDnao7COuCVhDydMS9NrCSVXhM79VaKyP5+Zc33m0QXEd2DN3UkU7OsHcfw==
 
-"@types/estree@0.0.39":
-  version "0.0.39"
-  resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
-  integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
-
 "@types/node@*":
   version "10.12.12"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.12.tgz#e15a9d034d9210f00320ef718a50c4a799417c47"
@@ -252,6 +247,11 @@ fs.realpath@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
+
+fsevents@~2.3.2:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
+  integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
 function-bind@^1.1.1:
   version "1.1.1"
@@ -625,13 +625,12 @@ rollup-pluginutils@^2.6.0, rollup-pluginutils@^2.8.2:
   dependencies:
     estree-walker "^0.6.1"
 
-rollup@^0.66.6:
-  version "0.66.6"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.66.6.tgz#ce7d6185beb7acea644ce220c25e71ae03275482"
-  integrity sha512-J7/SWanrcb83vfIHqa8+aVVGzy457GcjA6GVZEnD0x2u4OnOd0Q1pCrEoNe8yLwM6z6LZP02zBT2uW0yh5TqOw==
-  dependencies:
-    "@types/estree" "0.0.39"
-    "@types/node" "*"
+rollup@^2.80.0:
+  version "2.80.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.80.0.tgz#a82efc15b748e986a7c76f0f771221b1fa108a2c"
+  integrity sha512-cIFJOD1DESzpjOBl763Kp1AH7UE/0fcdHe6rZXUdQ9c50uvgigvW97u3IcSeBwOkgqL/PXPBktBCh0KEu5L8XQ==
+  optionalDependencies:
+    fsevents "~2.3.2"
 
 safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
